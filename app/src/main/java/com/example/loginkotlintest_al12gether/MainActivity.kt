@@ -21,10 +21,13 @@ class MainActivity : AppCompatActivity() {
 //            맞을 때 => 틀릴 때 분기처리. (if문 활용)
 
 //            ID도 맞고, 비번도 맞아야 함. => 그래야 관리자.
-            if (inputId == "admin@test.com" && inputPW == "qwer") {
+            if (inputId == "admin@al12gether.com" && inputPW == "sbs1234") {
 
-//                둘 다 맞다면 => 관리자 입니다. 토스트
-                Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
+//                관리자 이름을 변수에 임시 저장.
+                val name = "al12gether"
+
+//                둘 다 맞다면 => 이윤민 관리자 입니다. 토스트
+                Toast.makeText(this, "${name}관리자입니다.", Toast.LENGTH_SHORT).show()
 
             }
             else {
